@@ -7,9 +7,9 @@
 //
 // This script listens for the uri {request_uri}:port/meraki
 //
-var listenport = 9201;   										//TCP listening port
-var secret = "xxxxxx";											//Secret that you chose in the Meraki dashboard
-var validator = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";		//Validator string that is shown in the Meraki dashboard
+var listenport = 9201;   				//TCP listening port
+var secret = process.env.MERAKI_SECRET;			//Secret that you chose in the Meraki dashboard
+var validator = process.env.MERAKI_VALIDATOR;		//Validator string that is shown in the Meraki dashboard
 
 
 var express = require('express');
