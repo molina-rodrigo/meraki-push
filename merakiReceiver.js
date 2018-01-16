@@ -14,9 +14,9 @@ var validator = process.env.MERAKI_VALIDATOR;		//Validator string that is shown 
 
 var express = require('express');
 var app = express();
-var bodyParser = require('body-Parser');
+var bodyparser = require('body-parser');
 
-app.use(bodyParser);
+app.use(bodyparser);
 
 app.get('/meraki', function(req, res){
   res.send(validator);

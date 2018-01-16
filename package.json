@@ -1,0 +1,23 @@
+{
+  "name": "meraki-push",
+  "version": "1.0.0",
+  "description": "",
+  "main": "merakiReceiver.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/molina-rodrigo/meraki-push.git"
+  },
+  "author": "rodrigo molina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/molina-rodrigo/meraki-push/issues"
+  },
+  "homepage": "https://github.com/molina-rodrigo/meraki-push#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  }
+}
