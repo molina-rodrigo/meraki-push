@@ -7,16 +7,20 @@
 //
 // This script listens for the uri {request_uri}:port/meraki
 //
-var listenport = 9201;   				//TCP listening port
-var secret = process.env.MERAKI_SECRET;			//Secret that you chose in the Meraki dashboard
-var validator = process.env.MERAKI_VALIDATOR;		//Validator string that is shown in the Meraki dashboard
+var listenport = 3000;   				//TCP listening port
+var secret = "secretkeyverysecret";			//Secret that you chose in the Meraki dashboard
+var validator = "7a64f52cde1a36ddb1e25819d509da619218e1b5";		//Validator string that is shown in the Meraki dashboard
 
 
 var express = require('express');
 var app = express();
-var bodyparser = require('body-parser');
+var bodyParser = require('body-parser');
 
-app.use(bodyparser);
+app.use(bodyParser.urlencoded({
+	  extended: true
+}));
+
+app.use(bodyParser.json());
 
 app.get('/meraki', function(req, res){
   res.send(validator);
