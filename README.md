@@ -1,4 +1,6 @@
 # meraki-push
 
-#Config
+# Environment Config
 export GOOGLE_APPLICATION_CREDENTIALS="[PATH]"
+export MERAKIPUSH_SECRET="VALUE"
+export MERAKIPUSH_VALIDATOR="VALUE"
